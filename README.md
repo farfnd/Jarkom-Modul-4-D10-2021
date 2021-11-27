@@ -1,9 +1,11 @@
 # Jarkom-Modul-4-D10-2021
 
 ## Anggota Kelompok D10
-- Mohammad Faderik I H (05111940000023)
-- Farhan Arifandi (05111940000061)
-- Yusril Zubaydi (05111940000160)
+| Nama | NRP | Bagian yang dikerjakan |
+|--------|-----------|---------|
+| Mohammad Faderik I H | 05111940000023 | CIDR: routing |
+| Farhan Arifandi | 05111940000061 | CIDR: penentuan subnet, pembuatan pohon IP, network configuration |
+| Yusril Zubaydi | 05111940000160 | VLSM |
 
 ## Topologi
 ![Topologi](https://media.discordapp.net/attachments/798177440425181256/914057022822051840/topologi.PNG?width=1207&height=701)
@@ -270,6 +272,341 @@ Dari pohon tersebut dapat diuraikan pembagian IP tiap subnet dan dapat dilihat p
 | (/30)               | Network ID        | 151.100.10.0    |
 | Oimo - Fukurou      | Netmask           | 255.255.255.252 |
 |                     | Broadcast Address | 151.100.10.3    |
+
+
+### Network configuration untuk tiap node
+(Klik kanan node -> Edit network configuration)
+
+**Jipangu**
+
+```
+auto eth0
+iface eth0 inet static
+address 10.26.8.2
+netmask 255.255.255.128
+gateway 10.26.8.1
+```
+
+**Pucci**
+
+```
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet static
+address 10.26.16.1
+netmask 255.255.255.252
+gateway 10.26.16.2
+
+auto eth1
+iface eth1 inet static
+address 10.26.8.1
+netmask 255.255.255.128
+
+auto eth2
+iface eth2 inet static
+address 10.26.0.1
+netmask 255.255.248.0
+```
+
+**Courtyard**
+
+```
+auto eth0
+iface eth0 inet static
+address 10.26.0.2
+netmask 255.255.248.0
+gateway 10.26.0.1
+```
+
+**Calmbelt**
+
+```
+auto eth0
+iface eth0 inet static
+address 10.26.0.3
+netmask 255.255.248.0
+gateway 10.26.0.1
+```
+
+**Water7**
+
+```
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet static
+address 10.26.64.1
+netmask 255.255.255.252
+gateway 10.26.64.2
+
+auto eth1
+iface eth1 inet static
+address 10.26.32.1
+netmask 255.255.252.0
+
+auto eth2
+iface eth2 inet static
+address 10.26.16.2
+netmask 255.255.255.252
+```
+
+**Cipher**
+
+```
+auto eth0
+iface eth0 inet static
+address 10.26.32.2
+netmask 255.255.252.0
+gateway 10.26.32.1
+```
+
+**Foosha**
+
+```
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet dhcp
+
+auto eth1
+iface eth1 inet static
+address 10.26.192.1
+netmask 255.255.252.0
+
+auto eth2
+iface eth2 inet static
+address 151.63.10.1
+netmask 255.255.255.252
+
+auto eth3
+iface eth3 inet static
+address 10.26.64.2
+netmask 255.255.255.252
+
+auto eth4
+iface eth4 inet static
+address 10.26.160.1
+netmask 255.255.255.252
+```
+
+**Blueno**
+```
+auto eth0
+iface eth0 inet static
+address 10.26.192.2
+netmask 255.255.252.0
+gateway 10.26.192.1
+```
+
+**Doriki**
+```
+auto eth0
+iface eth0 inet static
+address 151.63.10.2
+netmask 255.255.255.252
+gateway 151.63.10.1
+```
+
+**Guanhao**
+```
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet static
+address 10.26.160.2
+netmask 255.255.255.252
+gateway 10.26.160.1
+
+auto eth1
+iface eth1 inet static
+address 10.26.152.1
+netmask 255.255.252.0
+
+auto eth2
+iface eth2 inet static
+address 10.26.144.1
+netmask 255.255.254.0
+
+auto eth3
+iface eth3 inet static
+address 10.26.136.1
+netmask 255.255.255.252
+```
+
+**Jabra**
+```
+auto eth0
+iface eth0 inet static
+address 10.26.152.2
+netmask 255.255.252.0
+gateway 10.26.152.1
+```
+
+**Maingate**
+```
+auto eth0
+iface eth0 inet static
+address 10.26.144.3
+netmask 255.255.254.0
+gateway 10.26.144.1
+```
+
+**Alabasta**
+```
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet static
+address 10.26.144.2
+netmask 255.255.254.0
+gateway 10.26.144.1
+
+auto eth1
+iface eth1 inet static
+address 10.26.148.1
+netmask 255.255.255.240
+```
+
+**Jorge**
+```
+auto eth0
+iface eth0 inet static
+address 10.26.148.2
+netmask 255.255.255.240
+gateway 10.26.148.1
+```
+
+**Oimo**
+```
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet static
+address 10.26.136.2
+netmask 255.255.255.252
+gateway 10.26.136.1
+
+auto eth1
+iface eth1 inet static
+address 151.100.10.1
+netmask 255.255.255.252
+
+auto eth2
+iface eth2 inet static
+address 10.26.132.1
+netmask 255.255.255.0
+```
+
+**Fukurou**
+```
+auto eth0
+iface eth0 inet static
+address 151.100.10.2
+netmask 255.255.255.252
+gateway 151.100.10.1
+```
+
+**EniesLobby**
+```
+auto eth0
+iface eth0 inet static
+address 10.26.132.3
+netmask 255.255.255.0
+gateway 10.26.132.1
+```
+
+**Seastone**
+```
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet static
+address 10.26.132.2
+netmask 255.255.255.0
+gateway 10.26.132.1
+
+auto eth1
+iface eth1 inet static
+address 10.26.128.1
+netmask 255.255.252.0
+```
+
+**Elena**
+```
+auto eth0
+iface eth0 inet static
+address 10.26.128.2
+netmask 255.255.252.0
+gateway 10.26.128.1
+```
+
+### Routing
+- Pada console router Foosha, jalankan perintah berikut agar topologi bisa mengakses internet ke luar.
+```
+iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -s 10.26.0.0/16
+cat /etc/resolv.conf
+```
+- Bila muncul `nameserver 192.168.122.1`, maka jalankan perintah berikut pada node lainnya.
+```
+echo nameserver 192.168.122.1 > /etc/resolv.conf
+```
+
+**Foosha**
+(agar bisa mengakses server Doriki dan Fukurou)
+```
+iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -s 10.26.0.0/16
+iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -s 151.63.10.0/30
+iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -s 151.100.10.0/30
+```
+
+```
+route add -net 10.26.0.0 netmask 255.255.128.0 gw 10.26.64.1
+route add -net 10.26.128.0 netmask 255.255.192.0 gw 10.26.160.2
+route add -net 151.100.10.0 netmask 255.255.255.252 gw 10.26.160.2
+```
+
+**Water7**
+```
+route add -net 10.26.0.0 netmask 255.255.224.0 gw 10.26.16.1
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.26.64.2
+```
+
+**Pucci**
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.26.16.2
+```
+
+**Guanhao**
+```
+route add -net 10.26.148.0 netmask 255.255.255.240 gw 10.26.144.2
+route add -net 10.26.128.0 netmask 255.255.240.0 gw 10.26.136.2
+route add -net 151.100.10.0 netmask 255.255.255.252 gw 10.26.136.2
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.26.160.1
+```
+
+**Alabasta**
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.26.144.1
+```
+
+**Oimo**
+```
+route add -net 10.26.128.0 netmask 255.255.252.0 gw 10.26.132.2
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.26.136.1
+```
+
+**Seastone**
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.26.132.1
+```
 
 ## Kendala selama pengerjaan
 - Sempat gagal melakukan ping ke server pada CPT (VLSM)
