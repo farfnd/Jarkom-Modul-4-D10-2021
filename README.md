@@ -37,7 +37,9 @@ Untuk jumlah IP yang dibutuhkan setiap subnet diuraikan pada tabel dibawah ini.
 | **Total**  | **5845**      | **/19**     |
 
 Subnet besar yang akan digunakan memiliki NID dan netmask `10.26.0.0/19`. Perhitungan IP dari setiap subnet bisa dilihat pada gambar dibawah ini
+
 ![Pohon IP](https://media.discordapp.net/attachments/848199470025801749/914058155862929468/unknown.png)
+
 Dari pohon tersebut dapat diuraikan pembagian IP tiap subnet dan dapat dilihat di tabel dibawah ini
 |     |                   |                 |
 |-----|-------------------|-----------------|
