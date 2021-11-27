@@ -165,3 +165,40 @@ Untuk routing pada CPT , akan diberikan static route pada semua router yang ada 
 0.0.0.0/0 via 10.26.26.1
 ```
 
+## CIDR - GNS3
+### Subnetting
+![image](https://user-images.githubusercontent.com/70105993/143676621-b285952a-4cfd-45e0-81e5-dcf9593cceff.png)
+
+- B1: A1 + A3
+- B2: A12 + A13
+- B3: A10 + A11
+
+![image](https://user-images.githubusercontent.com/70105993/143676637-139db206-73c4-44a7-9ec0-4401cbfafa40.png)
+
+- C1: B1 + A4
+- C2: B2 + A9
+- C3: B3 + A8
+
+![image](https://user-images.githubusercontent.com/70105993/143676666-4b46fe2e-89a2-445d-ba51-e942b707c4a6.png)
+
+- D1: C1 + A2
+- D2: C2 + C3
+
+![image](https://user-images.githubusercontent.com/70105993/143676688-89912f27-939c-47d8-b54f-c35bd5279887.png)
+
+- E1: D1 + A5
+- E2: D2 + A7
+
+![image](https://user-images.githubusercontent.com/70105993/143676708-c3ba3fa5-3bf1-43c3-a545-e0e1fd19a51f.png)
+
+- F1: E2 + A6
+
+![image](https://user-images.githubusercontent.com/70105993/143676734-7670a87b-9fbc-48ff-b676-820f5fbce010.png)
+
+- G1: E1 + F1
+
+![image](https://user-images.githubusercontent.com/70105993/143676749-2de6e05e-49af-4f4b-b32c-f0c70ed0bf7d.png)
+
+Subnet besar yang digunakan memiliki NID dan netmask `10.26.0.0/16`. Perhitungan IP dari setiap subnet bisa dilihat pada gambar berikut.
+
+![Pohon IP CIDR](https://user-images.githubusercontent.com/70105993/143676771-6ab5a1c9-aea9-4721-9643-7bfe19ab7a44.png)
