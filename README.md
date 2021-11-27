@@ -275,7 +275,7 @@ Dari pohon tersebut dapat diuraikan pembagian IP tiap subnet dan dapat dilihat p
 
 
 ### Network configuration untuk tiap node
-(Klik kanan node -> Edit network configuration)
+(Klik kanan node -> Configure -> Edit network configuration)
 
 **Jipangu**
 
