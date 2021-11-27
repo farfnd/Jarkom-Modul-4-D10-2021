@@ -270,3 +270,8 @@ Dari pohon tersebut dapat diuraikan pembagian IP tiap subnet dan dapat dilihat p
 | (/30)               | Network ID        | 151.100.10.0    |
 | Oimo - Fukurou      | Netmask           | 255.255.255.252 |
 |                     | Broadcast Address | 151.100.10.3    |
+
+## Kendala selama pengerjaan
+- Sempat gagal melakukan ping ke server pada CPT (VLSM)
+- Sempat ragu apakah server dijadikan subnet sendiri atau tidak ketika melakukan pembagian subnet untuk metode CIDR
+- its.ac.id tidak dapat di-ping baik menggunakan console di dalam GNS3 maupun command prompt dari sistem operasi (di luar GNS3).
