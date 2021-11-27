@@ -36,11 +36,11 @@ Untuk jumlah IP yang dibutuhkan setiap subnet diuraikan pada tabel dibawah ini.
 | A15    | 721       | /22     |
 | **Total**  | **5845**      | **/19**     |
 
-Subnet besar yang akan digunakan memiliki NID dan netmask `10.26.0.0/19`. Perhitungan IP dari setiap subnet bisa dilihat pada gambar dibawah ini
+Subnet besar yang akan digunakan memiliki NID dan netmask `10.26.0.0/19`. Perhitungan IP dari setiap subnet bisa dilihat pada gambar di bawah ini
 
 ![Pohon IP](https://media.discordapp.net/attachments/848199470025801749/914058155862929468/unknown.png)
 
-Dari pohon tersebut dapat diuraikan pembagian IP tiap subnet dan dapat dilihat di tabel dibawah ini
+Dari pohon tersebut dapat diuraikan pembagian IP tiap subnet dan dapat dilihat di tabel di bawah ini
 |     |                   |                 |
 |-----|-------------------|-----------------|
 | A1  | Network ID        | 10.26.27.0      |
@@ -122,7 +122,7 @@ Untuk routing pada CPT , akan diberikan static route pada semua router yang ada 
 10.26.27.144/30 via 10.26.27.150
 ```
 
-**Water 7**
+**Water7**
 
 ```
 0.0.0.0/0 via 10.26.27.149
@@ -166,6 +166,9 @@ Untuk routing pada CPT , akan diberikan static route pada semua router yang ada 
 ```
 
 ## CIDR - GNS3
+### Topologi pada GNS3
+![Topologi GNS3](https://user-images.githubusercontent.com/70105993/143677912-9986c511-ab52-4dd8-ab3b-d43461533da8.png)
+
 ### Subnetting
 ![image](https://user-images.githubusercontent.com/70105993/143676621-b285952a-4cfd-45e0-81e5-dcf9593cceff.png)
 
