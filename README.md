@@ -202,3 +202,68 @@ Untuk routing pada CPT , akan diberikan static route pada semua router yang ada 
 Subnet besar yang digunakan memiliki NID dan netmask `10.26.0.0/16`. Perhitungan IP dari setiap subnet bisa dilihat pada gambar berikut.
 
 ![Pohon IP CIDR](https://user-images.githubusercontent.com/70105993/143676771-6ab5a1c9-aea9-4721-9643-7bfe19ab7a44.png)
+
+
+Dari pohon tersebut dapat diuraikan pembagian IP tiap subnet dan dapat dilihat pada tabel berikut.
+
+|                     |                   |                 |
+|---------------------|-------------------|-----------------|
+| A1 (/25)            | Network ID        | 10.26.8.0       |
+| Jipangu - Pucci     | Netmask           | 255.255.255.128 |
+|                     | Broadcast Address | 10.26.8.127     |
+|                     |                   |                 |
+| A2 (/22)            | Network ID        | 10.26.32.0      |
+| Cipher - Water7     | Netmask           | 255.255.252.0   |
+|                     | Broadcast Address | 10.26.35.255    |
+|                     |                   |                 |
+| A3 (/21)            | Network ID        | 10.26.0.0       |
+| Pucci - Courtyard   | Netmask           | 255.255.248.0   |
+| - Calmbelt          | Broadcast Address | 10.26.7.255     |
+|                     |                   |                 |
+| A4 (/30)            | Network ID        | 10.26.16.0      |
+| Pucci - Water7      | Netmask           | 255.255.255.252 |
+|                     | Broadcast Address | 10.26.16.3      |
+|                     |                   |                 |
+| A5 (/30)            | Network ID        | 10.26.64.0      |
+| Foosha - Water7     | Netmask           | 255.255.255.252 |
+|                     | Broadcast Address | 10.26.64.3      |
+|                     |                   |                 |
+| A6 (/22)            | Network ID        | 10.26.192.0     |
+| Blueno - Foosha     | Netmask           | 255.255.252.0   |
+|                     | Broadcast Address | 10.26.195.255   |
+|                     |                   |                 |
+| A7 (/30)            | Network ID        | 10.26.160.0     |
+| Foosha - Guanhao    | Netmask           | 255.255.255.252 |
+|                     | Broadcast Address | 10.26.160.3     |
+|                     |                   |                 |
+| A8 (/22)            | Network ID        | 10.26.152.0     |
+| Guanhao - Jabra     | Netmask           | 255.255.252.0   |
+|                     | Broadcast Address | 10.26.155.255   |
+|                     |                   |                 |
+| A9 (/30)            | Network ID        | 10.26.136.0     |
+| Guanhao - Oimo      | Netmask           | 255.255.255.252 |
+|                     | Broadcast Address | 10.26.136.3     |
+|                     |                   |                 |
+| A10 (/23)           | Network ID        | 10.26.144.0     |
+| Guanhao - Maingate  | Netmask           | 255.255.254.0   |
+| - Alabasta          | Broadcast Address | 10.26.145.255   |
+|                     |                   |                 |
+| A11 (/28)           | Network ID        | 10.26.148.0     |
+| Alabasta - Jorge    | Netmask           | 255.255.255.240 |
+|                     | Broadcast Address | 10.26.148.15    |
+|                     |                   |                 |
+| A12 (/24)           | Network ID        | 10.26.132.0     |
+| Oimo - EniesLobby   | Netmask           | 255.255.255.0   |
+| - Seastone          | Broadcast Address | 10.26.132.255   |
+|                     |                   |                 |
+| A13 (/22)           | Network ID        | 10.26.128.0     |
+| Seastone - Elena    | Netmask           | 255.255.252.0   |
+|                     | Broadcast Address | 10.26.131.255   |
+|                     |                   |                 |
+| (/30)               | Network ID        | 151.63.10.0     |
+| Foosha - Doriki     | Netmask           | 255.255.255.252 |
+|                     | Broadcast Address | 151.63.10.3     |
+|                     |                   |                 |
+| (/30)               | Network ID        | 151.100.10.0    |
+| Oimo - Fukurou      | Netmask           | 255.255.255.252 |
+|                     | Broadcast Address | 151.100.10.3    |
